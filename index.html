@@ -1,0 +1,92 @@
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    .content-textarea {
+      width: 100%;
+      font-size: 11px;
+      font-weight: bold;
+      height: 375px;
+      background: url(http://i.imgur.com/2cOaJ.png);
+      background-attachment: local;
+      background-repeat: no-repeat;
+      padding-left: 35px;
+      padding-top: 10px;
+      border-color:#ccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="main-div">
+      <h1 class="watermark text-center">.ENV File Comparer (right to left)</h1>
+
+      <h2 class="watermark text-center">Paste your .ENV contents</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <textarea
+              name=""
+              id="left-content"
+              cols="30"
+              rows="10"
+              class="content-textarea"
+            ></textarea>
+          </div>
+          <div class="col">
+            <textarea
+              name=""
+              id="right-content"
+              cols="30"
+              rows="10"
+              class="content-textarea"
+            ></textarea>
+          </div>
+        </div>
+
+        <h2 class="watermark text-center">
+         Difference View
+        </h1>
+
+        <div class="row">
+          <div class="col">
+            <textarea
+              name=""
+              id="left-view"
+              cols="30"
+              rows="10"
+              class="content-textarea"
+            ></textarea>
+          </div>
+          <div class="col">
+            <textarea
+              name=""
+              id="right-view"
+              cols="30"
+              rows="10"
+              class="content-textarea"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col text-center">
+            <button
+              type="button"
+              class="btn btn-primary"
+              type="button"
+              id="diff-btn"
+            >
+              Diff
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
